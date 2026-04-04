@@ -100,91 +100,93 @@
     <section>
         <h2>About</h2>
         <p>
-            I work at the intersection of <b>reinforcement learning</b> and 
-            <b>computational neuroscience</b>, focusing on how brain-inspired 
-            decision-making can be modeled and leveraged for clinical interventions.
-        </p>
-        <p>
-            My research spans <b>deep RL</b>, <b>offline RL</b>, and 
-            <b>closed-loop neural control</b>, with applications in Parkinson’s disease, 
-            glucose regulation, and multi-agent physiological systems.
+            I work at the intersection of reinforcement learning and computational neuroscience,
+            focusing on sequential decision-making and closed-loop control for biological systems.
         </p>
     </section>
 
-    <!-- Research -->
+    <!-- Projects -->
     <section>
-        <h2>Research</h2>
+        <h2>Projects</h2>
 
         <div class="card">
-            <h3>Adaptive Deep Brain Stimulation (DBS)</h3>
+            <h3>Adaptive Deep Brain Stimulation using Reinforcement Learning</h3>
             <p>
-                Modeled DBS as a sequential decision-making problem and designed 
-                PPO-based controllers to optimize stimulation parameters.
+                Formulated DBS as a sequential decision-making problem over neural state trajectories.
+                Designed a PPO-based controller to optimize stimulation parameters such as pulse timing and amplitude.
             </p>
             <span class="tag">PPO</span>
             <span class="tag">Neuro-control</span>
         </div>
 
         <div class="card">
-            <h3>Offline RL for L-DOPA Optimization</h3>
+            <h3>Offline RL for L-DOPA Medication Optimization</h3>
             <p>
-                Developed offline Q-learning framework on clinical datasets (PPMI) 
-                for safe medication policy learning.
+                Modeled medication dosing as an MDP using clinical patient data (PPMI dataset).
+                Developed an offline Q-learning framework for safe policy learning under clinical constraints.
             </p>
             <span class="tag">Offline RL</span>
-            <span class="tag">Healthcare AI</span>
+            <span class="tag">Healthcare</span>
+        </div>
+
+        <div class="card">
+            <h3>Diet Optimization and Glucose Regulation via RL</h3>
+            <p>
+                Designed a sequential learning framework (LSTM + PPO) for personalized glucose regulation,
+                addressing delayed rewards and temporal dependencies.
+            </p>
+            <span class="tag">Sequential RL</span>
+            <span class="tag">Time-series</span>
         </div>
 
         <div class="card">
             <h3>Multi-Agent Gut–Brain Energy Regulation</h3>
             <p>
-                Modeled gut–brain interaction as a cooperative MARL system using MAPPO 
-                in a custom Gym environment.
+                Modeled gut–brain interaction as a cooperative multi-agent system.
+                Built a custom Gym environment and learned decentralized policies using MAPPO.
             </p>
             <span class="tag">MARL</span>
             <span class="tag">MAPPO</span>
         </div>
 
-    </section>
-
-    <!-- Publications -->
-    <section>
-        <h2>Publications & Preprints</h2>
-
         <div class="card">
+            <h3>Graph Attention Multi-Agent Reinforcement Learning</h3>
             <p>
-                <b>NutriRL:</b> Benchmark for Nutritional Regulation under Delayed Dynamics  
-                <br><i>Under review (RLC 2026)</i>
+                Designed a MARL framework using graph attention networks under partial observability,
+                improving coordination in continuous control environments over baseline methods.
             </p>
-        </div>
-
-        <div class="card">
-            <p>
-                <b>DBS for Exploration Optimization via STN–GPe Dynamics</b>  
-                <br><i>Under review (PLOS Computational Biology)</i>
-            </p>
-        </div>
-
-    </section>
-
-    <!-- Projects -->
-    <section>
-        <h2>Selected Projects</h2>
-
-        <div class="card">
-            <h3>Graph Attention MARL</h3>
-            <p>
-                Improved coordination in continuous multi-agent environments using 
-                graph attention networks over MADDPG.
-            </p>
+            <span class="tag">GAT</span>
+            <span class="tag">MARL</span>
         </div>
 
         <div class="card">
             <h3>Attention-Enhanced Normalizing Flows</h3>
             <p>
-                Extended RealNVP with attention-based coupling layers for improved 
-                density estimation.
+                Extended RealNVP with attention-based coupling layers (CBAM),
+                improving density estimation and generative modeling performance.
             </p>
+            <span class="tag">Flows</span>
+            <span class="tag">Generative Models</span>
+        </div>
+
+        <div class="card">
+            <h3>GRU-Based Control of a 2-Link Robotic Arm</h3>
+            <p>
+                Trained recurrent neural networks for control in MuJoCo environments
+                and analyzed stability via fixed-point analysis.
+            </p>
+            <span class="tag">RNN</span>
+            <span class="tag">Control</span>
+        </div>
+
+        <div class="card">
+            <h3>RGB to Thermal Image Translation</h3>
+            <p>
+                Implemented cross-domain image translation using Pix2Pix GAN, U-Net++, and MANet,
+                evaluating performance for thermal reconstruction from RGB inputs.
+            </p>
+            <span class="tag">GAN</span>
+            <span class="tag">Computer Vision</span>
         </div>
 
     </section>
@@ -193,11 +195,10 @@
     <section>
         <h2>Skills</h2>
         <p>
-            Python, PyTorch, Gymnasium, MuJoCo, TorchRL, PettingZoo, OpenCV
+            Python, PyTorch, Gymnasium, MuJoCo, TorchRL, PettingZoo, OpenCV, Scikit-learn
         </p>
     </section>
 
-    <!-- Footer -->
     <footer>
         © 2026 Charitha Palika
     </footer>
