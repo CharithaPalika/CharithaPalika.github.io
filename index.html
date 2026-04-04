@@ -8,74 +8,69 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-    body {
-        font-family: 'Inter', sans-serif;
-        margin: 0;
-        background: #fafafa;
-        color: #222;
-        line-height: 1.6;
-    }
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #fafafa;
+    color: #222;
+    line-height: 1.6;
+}
 
-    .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 40px 20px;
-    }
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
 
-    h1, h2, h3 {
-        font-weight: 600;
-        color: #111;
-    }
+h1, h2, h3 {
+    font-weight: 600;
+    color: #111;
+}
 
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 5px;
-    }
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
 
-    .subtitle {
-        color: #555;
-        margin-bottom: 20px;
-    }
+.subtitle {
+    color: #555;
+    margin-bottom: 20px;
+}
 
-    .links a {
-        margin-right: 15px;
-        text-decoration: none;
-        color: #0077cc;
-        font-weight: 500;
-    }
+.links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 500;
+}
 
-    section {
-        margin-top: 40px;
-    }
+section {
+    margin-top: 40px;
+}
 
-    .card {
-        background: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        border: 1px solid #eee;
-        margin-bottom: 15px;
-        transition: 0.2s;
-    }
+.card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 12px;
+}
 
-    .card:hover {
-        border-color: #ccc;
-    }
+.tag {
+    display: inline-block;
+    background: #eee;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
 
-    .tag {
-        display: inline-block;
-        background: #eee;
-        padding: 3px 8px;
-        border-radius: 5px;
-        font-size: 0.8rem;
-        margin-right: 5px;
-    }
-
-    footer {
-        margin-top: 60px;
-        text-align: center;
-        font-size: 0.9rem;
-        color: #777;
-    }
+footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
 </style>
 </head>
 
@@ -83,125 +78,192 @@
 
 <div class="container">
 
-    <!-- Header -->
-    <h1>Charitha Palika</h1>
-    <div class="subtitle">
-        PhD Scholar — IIT Madras | Reinforcement Learning × Neuroscience
-    </div>
+<!-- HEADER -->
+<h1>Charitha Palika</h1>
+<div class="subtitle">
+PhD Scholar — IIT Madras | Reinforcement Learning × Computational Neuroscience
+</div>
 
-    <div class="links">
-        <a href="mailto:charithapalika@gmail.com">Email</a>
-        <a href="https://github.com/yourusername">GitHub</a>
-        <a href="#">Google Scholar</a>
-        <a href="#">CV (PDF)</a>
-    </div>
+<div class="links">
+<a href="mailto:charithapalika@gmail.com">Email</a>
+<a href="https://github.com/yourusername">GitHub</a>
+<a href="#">Google Scholar</a>
+<a href="#">CV (PDF)</a>
+</div>
 
-    <!-- About -->
-    <section>
-        <h2>About</h2>
-        <p>
-            I work at the intersection of reinforcement learning and computational neuroscience,
-            focusing on sequential decision-making and closed-loop control for biological systems.
-        </p>
-    </section>
+<!-- RESEARCH SUMMARY -->
+<section>
+<h2>Research Summary</h2>
+<p>
+I work at the intersection of reinforcement learning and computational neuroscience,
+focusing on modeling brain-inspired decision-making and designing closed-loop therapeutic systems.
+My work spans deep RL, offline RL, and multi-agent systems, with applications in Parkinson’s disease,
+glucose regulation, and physiological control under delayed rewards and uncertainty.
+</p>
+</section>
 
-    <!-- Projects -->
-    <section>
-        <h2>Projects</h2>
+<!-- EDUCATION -->
+<section>
+<h2>Education</h2>
 
-        <div class="card">
-            <h3>Adaptive Deep Brain Stimulation using Reinforcement Learning</h3>
-            <p>
-                Formulated DBS as a sequential decision-making problem over neural state trajectories.
-                Designed a PPO-based controller to optimize stimulation parameters such as pulse timing and amplitude.
-            </p>
-            <span class="tag">PPO</span>
-            <span class="tag">Neuro-control</span>
-        </div>
+<div class="card">
+<b>Ph.D., Computational Neuroscience</b> — IIT Madras (Ongoing) <br>
+CGPA: 9.48
+</div>
 
-        <div class="card">
-            <h3>Offline RL for L-DOPA Medication Optimization</h3>
-            <p>
-                Modeled medication dosing as an MDP using clinical patient data (PPMI dataset).
-                Developed an offline Q-learning framework for safe policy learning under clinical constraints.
-            </p>
-            <span class="tag">Offline RL</span>
-            <span class="tag">Healthcare</span>
-        </div>
+<div class="card">
+<b>M.Tech, Clinical Engineering</b> — IIT Madras (2020) <br>
+CGPA: 9.82
+</div>
 
-        <div class="card">
-            <h3>Diet Optimization and Glucose Regulation via RL</h3>
-            <p>
-                Designed a sequential learning framework (LSTM + PPO) for personalized glucose regulation,
-                addressing delayed rewards and temporal dependencies.
-            </p>
-            <span class="tag">Sequential RL</span>
-            <span class="tag">Time-series</span>
-        </div>
+<div class="card">
+<b>B.Tech, Biotechnology</b> — NIT Warangal (2018) <br>
+CGPA: 8.57
+</div>
 
-        <div class="card">
-            <h3>Multi-Agent Gut–Brain Energy Regulation</h3>
-            <p>
-                Modeled gut–brain interaction as a cooperative multi-agent system.
-                Built a custom Gym environment and learned decentralized policies using MAPPO.
-            </p>
-            <span class="tag">MARL</span>
-            <span class="tag">MAPPO</span>
-        </div>
+</section>
 
-        <div class="card">
-            <h3>Graph Attention Multi-Agent Reinforcement Learning</h3>
-            <p>
-                Designed a MARL framework using graph attention networks under partial observability,
-                improving coordination in continuous control environments over baseline methods.
-            </p>
-            <span class="tag">GAT</span>
-            <span class="tag">MARL</span>
-        </div>
+<!-- ONGOING RESEARCH -->
+<section>
+<h2>Ongoing Research</h2>
 
-        <div class="card">
-            <h3>Attention-Enhanced Normalizing Flows</h3>
-            <p>
-                Extended RealNVP with attention-based coupling layers (CBAM),
-                improving density estimation and generative modeling performance.
-            </p>
-            <span class="tag">Flows</span>
-            <span class="tag">Generative Models</span>
-        </div>
+<div class="card">
+<h3>Adaptive Deep Brain Stimulation using RL</h3>
+<p>
+Formulated DBS as a sequential decision-making problem over neural state trajectories.
+Designed a PPO-based controller to optimize stimulation parameters.
+</p>
+<span class="tag">PPO</span>
+<span class="tag">Neuro-control</span>
+</div>
 
-        <div class="card">
-            <h3>GRU-Based Control of a 2-Link Robotic Arm</h3>
-            <p>
-                Trained recurrent neural networks for control in MuJoCo environments
-                and analyzed stability via fixed-point analysis.
-            </p>
-            <span class="tag">RNN</span>
-            <span class="tag">Control</span>
-        </div>
+<div class="card">
+<h3>Offline RL for L-DOPA Optimization</h3>
+<p>
+Modeled medication dosing as an MDP using clinical data (PPMI dataset).
+Developed an offline Q-learning framework for safe policy learning.
+</p>
+<span class="tag">Offline RL</span>
+</div>
 
-        <div class="card">
-            <h3>RGB to Thermal Image Translation</h3>
-            <p>
-                Implemented cross-domain image translation using Pix2Pix GAN, U-Net++, and MANet,
-                evaluating performance for thermal reconstruction from RGB inputs.
-            </p>
-            <span class="tag">GAN</span>
-            <span class="tag">Computer Vision</span>
-        </div>
+<div class="card">
+<h3>Diet Optimization and Glucose Regulation</h3>
+<p>
+Designed an RL framework (LSTM + PPO) for personalized glucose regulation,
+handling delayed rewards and temporal dependencies.
+</p>
+<span class="tag">Sequential RL</span>
+</div>
 
-    </section>
+<div class="card">
+<h3>Multi-Agent Gut–Brain Energy Regulation</h3>
+<p>
+Modeled gut–brain interaction as a cooperative MARL system with decentralized policies trained via MAPPO.
+</p>
+<span class="tag">MARL</span>
+<span class="tag">MAPPO</span>
+</div>
 
-    <!-- Skills -->
-    <section>
-        <h2>Skills</h2>
-        <p>
-            Python, PyTorch, Gymnasium, MuJoCo, TorchRL, PettingZoo, OpenCV, Scikit-learn
-        </p>
-    </section>
+</section>
 
-    <footer>
-        © 2026 Charitha Palika
-    </footer>
+<!-- PUBLICATIONS -->
+<section>
+<h2>Publications & Research Output</h2>
+
+<div class="card">
+<p>
+<b>NutriRL:</b> Benchmark for Nutritional Regulation under Delayed State Transitions  
+<br><i>Under review — RLC 2026</i>
+</p>
+</div>
+
+<div class="card">
+<p>
+<b>DBS for Exploration Optimization via STN–GPe Desynchronization</b>  
+<br><i>Under review — PLOS Computational Biology</i>
+</p>
+</div>
+
+<div class="card">
+<p>
+RL Model of Dopamine-Mediated Appetite Regulation — AD/PD 2026
+</p>
+</div>
+
+<div class="card">
+<p>
+Basal Ganglia Modeling for Cognitive Performance — AD/PD 2024
+</p>
+</div>
+
+<div class="card">
+<p>
+Exploratory Dynamics in Basal Ganglia — SfN 2024
+</p>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h2>Projects</h2>
+
+<div class="card">
+<h3>Graph Attention MARL</h3>
+<p>
+Designed MARL framework using graph attention networks under partial observability,
+improving coordination in continuous control environments.
+</p>
+</div>
+
+<div class="card">
+<h3>Attention-Enhanced RealNVP</h3>
+<p>
+Extended flow-based models with attention-based coupling layers (CBAM),
+improving high-dimensional density estimation.
+</p>
+</div>
+
+<div class="card">
+<h3>GRU-Based Robotic Control</h3>
+<p>
+Trained recurrent neural networks for 2-link arm control in MuJoCo and analyzed stability via fixed points.
+</p>
+</div>
+
+<div class="card">
+<h3>RGB to Thermal Image Translation</h3>
+<p>
+Implemented cross-domain translation using Pix2Pix GAN, U-Net++, and MANet,
+evaluating thermal reconstruction performance.
+</p>
+</div>
+
+</section>
+
+<!-- SKILLS -->
+<section>
+<h2>Skills</h2>
+<p>
+Python, PyTorch, Gymnasium, MuJoCo, TorchRL, PettingZoo, OpenCV, Scikit-learn
+</p>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section>
+<h2>Achievements</h2>
+<ul>
+<li>Buti Foundation Gold Medal — IIT Madras</li>
+<li>Institute Merit Prize (M.Tech)</li>
+<li>American Express Award, Dr. S.S. Srikanta Prize</li>
+<li>GATE AIR 15 (Biotechnology)</li>
+<li>CSIR-UGC NET AIR 113</li>
+</ul>
+</section>
+
+<footer>
+© 2026 Charitha Palika
+</footer>
 
 </div>
 
