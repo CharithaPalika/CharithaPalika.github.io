@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charitha Palika | NeuroAI Researcher</title>
     <meta name="description" content="Portfolio of Charitha Palika, PhD Scholar at IIT Madras working on Reinforcement Learning and Computational Neuroscience.">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +17,9 @@
 
 <nav>
     <div class="nav-content">
-        <div class="nav-logo">Charitha Palika</div>
+        <div class="nav-logo">
+            <span class="path-tilde">~</span><span class="path-name">/charitha</span><span class="path-prompt">▌</span>
+        </div>
         <div class="nav-links">
             <a href="#about" class="nav-link">About</a>
             <a href="#education" class="nav-link">Education</a>
@@ -29,35 +33,87 @@
 
 <div class="container">
     <section class="hero" id="about">
-        <div class="hero-badge">✨ Open to Collaborations</div>
-        <h1>Charitha Palika</h1>
-        <div class="subtitle">
-            <span class="typing-text"></span><span class="typing-cursor">|</span>
+        <div class="hero-badge">
+            <span class="status-dot"></span>
+            Open to Collaborations
         </div>
+
+        <h1>Charitha Palika</h1>
+
+        <div class="subtitle">
+            <span class="shell-prompt">$</span>
+            <span class="typing-text"></span><span class="typing-cursor"></span>
+        </div>
+
         <p>I work at the intersection of reinforcement learning and computational neuroscience, focusing on modeling brain-inspired decision-making and designing closed-loop therapeutic systems. My work spans deep RL, offline RL, and multi-agent systems, with applications in Parkinson's disease, glucose regulation, and physiological control under delayed rewards and uncertainty.</p>
+
+        <div class="terminal-window">
+            <div class="terminal-chrome">
+                <div class="traffic-lights">
+                    <span class="tl tl-red"></span>
+                    <span class="tl tl-yellow"></span>
+                    <span class="tl tl-green"></span>
+                </div>
+                <span class="terminal-title">charitha@iitm — ~/portfolio — zsh</span>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line">
+                    <span class="t-prompt">charitha@iitm</span>
+                    <span class="t-cmd">&nbsp;cat</span>
+                    <span class="t-flag">&nbsp;profile.json</span>
+                </div>
+                <div class="terminal-line t-output">
+                    <span>{</span>
+                </div>
+                <div class="terminal-line t-output">
+                    &nbsp;&nbsp;<span class="t-key">"role"</span><span>: </span><span class="t-string">"PhD Scholar @ IIT Madras"</span><span>,</span>
+                </div>
+                <div class="terminal-line t-output">
+                    &nbsp;&nbsp;<span class="t-key">"focus"</span><span>: </span><span class="t-string">"RL × Computational Neuroscience"</span><span>,</span>
+                </div>
+                <div class="terminal-line t-output">
+                    &nbsp;&nbsp;<span class="t-key">"cgpa"</span><span>: </span><span class="t-val">9.48</span><span>,</span>
+                </div>
+                <div class="terminal-line t-output">
+                    &nbsp;&nbsp;<span class="t-key">"stack"</span><span>: [</span><span class="t-string">"PyTorch"</span><span>, </span><span class="t-string">"MuJoCo"</span><span>, </span><span class="t-string">"TorchRL"</span><span>],</span>
+                </div>
+                <div class="terminal-line t-output">
+                    &nbsp;&nbsp;<span class="t-key">"status"</span><span>: </span><span class="t-string" style="color: var(--accent-green);">"open_to_collaborations"</span>
+                </div>
+                <div class="terminal-line t-output">
+                    <span>}</span>
+                </div>
+                <div class="t-blank"></div>
+                <div class="terminal-line">
+                    <span class="t-prompt">charitha@iitm</span>
+                    <span class="t-cmd">&nbsp;_</span>
+                </div>
+            </div>
+        </div>
+
         <div class="hero-links">
-            <a href="mailto:charithapalika@gmail.com" class="btn primary" id="btn-email">✉️ Email Me</a>
-            <a href="https://github.com/CharithaPalika" class="btn" id="btn-github" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
-            <a href="#" class="btn" id="btn-scholar" target="_blank" rel="noopener noreferrer">🎓 Scholar</a>
-            <a href="resume/Charitha-Resume-001.pdf" class="btn" id="btn-cv" target="_blank" rel="noopener noreferrer">📄 CV (PDF)</a>
+            <a href="mailto:charithapalika@gmail.com" class="btn primary" id="btn-email">✉ Email Me</a>
+            <a href="https://github.com/CharithaPalika" class="btn" id="btn-github" target="_blank" rel="noopener noreferrer">⌥ GitHub</a>
+            <a href="#" class="btn" id="btn-scholar" target="_blank" rel="noopener noreferrer">⊕ Scholar</a>
+            <a href="resume/Charitha-Resume-001.pdf" class="btn" id="btn-cv" target="_blank" rel="noopener noreferrer">↓ CV (PDF)</a>
         </div>
     </section>
 
     <section id="education">
-        <h2 class="section-title"><span class="section-icon">🏛️</span> Education</h2>
+        <h2 class="section-title"><span class="comment-prefix">#</span> Education</h2>
         <div class="timeline">
             <div class="timeline-item">
-                <div class="timeline-date">Ongoing</div>
+                <div class="timeline-date">// ongoing</div>
                 <div class="timeline-title">Ph.D., Computational Neuroscience</div>
                 <div class="timeline-subtitle">IIT Madras &bull; CGPA: 9.48</div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-date">2020</div>
+                <div class="timeline-date">// 2020</div>
                 <div class="timeline-title">M.Tech, Clinical Engineering</div>
                 <div class="timeline-subtitle">IIT Madras &bull; CGPA: 9.82</div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-date">2018</div>
+                <div class="timeline-date">// 2018</div>
                 <div class="timeline-title">B.Tech, Biotechnology</div>
                 <div class="timeline-subtitle">NIT Warangal &bull; CGPA: 8.57</div>
             </div>
@@ -65,7 +121,7 @@
     </section>
 
     <section id="research">
-        <h2 class="section-title"><span class="section-icon">🧠</span> Ongoing Research</h2>
+        <h2 class="section-title"><span class="comment-prefix">#</span> Ongoing Research</h2>
         <div class="card-grid">
             <div class="glass-card">
                 <div class="card-glow"></div>
@@ -103,37 +159,37 @@
     </section>
 
     <section id="publications">
-        <h2 class="section-title"><span class="section-icon">📚</span> Selected Publications</h2>
+        <h2 class="section-title"><span class="comment-prefix">#</span> Selected Publications</h2>
         <div class="card-grid">
             <div class="glass-card pub-card">
                 <div class="card-glow"></div>
                 <h3>NutriRL: Benchmark for Nutritional Regulation</h3>
-                <div class="meta">Under review — RLC 2026</div>
+                <div class="meta">// under_review → RLC 2026</div>
                 <p>Introduced a novel RL benchmark with multi-channel delayed state dynamics.</p>
             </div>
             <div class="glass-card pub-card">
                 <div class="card-glow"></div>
                 <h3>DBS for Exploration Optimization</h3>
-                <div class="meta">Under review — PLOS Computational Biology</div>
+                <div class="meta">// under_review → PLOS Computational Biology</div>
                 <p>Designed an RL-based computational framework for decision-making in Parkinson's disease incorporating STN–GPe Desynchronization.</p>
             </div>
             <div class="glass-card pub-card">
                 <div class="card-glow"></div>
                 <h3>RL Model of Dopamine-Mediated Appetite</h3>
-                <div class="meta">AD/PD 2026</div>
+                <div class="meta">// published → AD/PD 2026</div>
                 <p>Modeled appetite regulation using a Monte Carlo Actor Critic agent.</p>
             </div>
             <div class="glass-card pub-card">
                 <div class="card-glow"></div>
                 <h3>Exploratory Dynamics in Basal Ganglia</h3>
-                <div class="meta">SfN 2024</div>
+                <div class="meta">// published → SfN 2024</div>
                 <p>Developed an RL model of the basal ganglia indirect pathway driven by chaotic attractors.</p>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <h2 class="section-title"><span class="section-icon">⚗️</span> Projects</h2>
+        <h2 class="section-title"><span class="comment-prefix">#</span> Projects</h2>
         <div class="card-grid">
             <div class="glass-card">
                 <div class="card-glow"></div>
@@ -171,21 +227,21 @@
     </section>
 
     <section id="skills">
-        <h2 class="section-title"><span class="section-icon">🏆</span> Skills &amp; Achievements</h2>
+        <h2 class="section-title"><span class="comment-prefix">#</span> Skills &amp; Achievements</h2>
         <div class="skills-section">
             <div class="skills-list">
-                <div class="skill-item">🐍 Python</div>
-                <div class="skill-item">🔥 PyTorch</div>
-                <div class="skill-item">👁️ OpenCV</div>
-                <div class="skill-item">📊 Scikit-learn</div>
-                <div class="skill-item">🤸 Gymnasium</div>
-                <div class="skill-item">🤖 MuJoCo</div>
-                <div class="skill-item">⚡ TorchRL</div>
-                <div class="skill-item">🐾 PettingZoo</div>
+                <div class="skill-item"><span class="skill-prefix">import</span> python</div>
+                <div class="skill-item"><span class="skill-prefix">import</span> pytorch</div>
+                <div class="skill-item"><span class="skill-prefix">import</span> opencv</div>
+                <div class="skill-item"><span class="skill-prefix">import</span> sklearn</div>
+                <div class="skill-item"><span class="skill-prefix">import</span> gymnasium</div>
+                <div class="skill-item"><span class="skill-prefix">import</span> mujoco</div>
+                <div class="skill-item"><span class="skill-prefix">import</span> torchrl</div>
+                <div class="skill-item"><span class="skill-prefix">import</span> pettingzoo</div>
             </div>
         </div>
         <div class="achievements-section">
-            <h3 class="achievements-heading">Awards</h3>
+            <h3 class="achievements-heading">// awards &amp; recognition</h3>
             <ul class="achievements-list">
                 <li><span class="ach-icon">🥇</span> Institute Merit Prize (M.Tech) for best academic record in Biotechnology, IIT Madras.</li>
                 <li><span class="ach-icon">🏅</span> American Express Award, Dr. S.S. Srikanta Prize, P K Narayana Iyer Prize for academic excellence.</li>
@@ -200,7 +256,11 @@
 <footer>
     <div class="container">
         <div class="footer-content">
-            <span>Made with 💜 by Charitha Palika</span>
+            <span class="footer-path">
+                <span class="fp-tilde">~</span><span class="fp-dir">/CharithaPalika.github.io</span>
+            </span>
+            <span class="footer-sep">·</span>
+            <span>Made with 💙 by Charitha</span>
             <span class="footer-sep">·</span>
             <span>© 2026</span>
         </div>
