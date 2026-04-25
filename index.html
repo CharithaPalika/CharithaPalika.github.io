@@ -5,119 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charitha Palika | NeuroAI Researcher</title>
     <meta name="description" content="Portfolio of Charitha Palika, PhD Scholar at IIT Madras working on Reinforcement Learning and Computational Neuroscience.">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Cormorant:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div id="progress-bar"></div>
+<canvas id="particle-canvas"></canvas>
 
 <nav>
     <div class="nav-content">
         <div class="nav-logo">Charitha Palika</div>
         <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#research" class="nav-link">Research</a>
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
         </div>
     </div>
 </nav>
 
 <div class="container">
     <section class="hero" id="about">
+        <div class="hero-badge">✨ Open to Collaborations</div>
         <h1>Charitha Palika</h1>
-        <div class="subtitle">PhD Scholar — IIT Madras | Reinforcement Learning × Computational Neuroscience</div>
-        <p>
-            I work at the intersection of reinforcement learning and computational neuroscience, focusing on modeling brain-inspired decision-making and designing closed-loop therapeutic systems. My work spans deep RL, offline RL, and multi-agent systems, with applications in Parkinson’s disease, glucose regulation, and physiological control under delayed rewards and uncertainty.
-        </p>
+        <div class="subtitle">
+            <span class="typing-text"></span><span class="typing-cursor">|</span>
+        </div>
+        <p>I work at the intersection of reinforcement learning and computational neuroscience, focusing on modeling brain-inspired decision-making and designing closed-loop therapeutic systems. My work spans deep RL, offline RL, and multi-agent systems, with applications in Parkinson's disease, glucose regulation, and physiological control under delayed rewards and uncertainty.</p>
         <div class="hero-links">
-            <a href="mailto:charithapalika@gmail.com" class="btn primary">Email Me</a>
-            <a href="https://github.com/yourusername" class="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-            <a href="resume/Charitha-Resume-001.pdf" class="btn" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
+            <a href="mailto:charithapalika@gmail.com" class="btn primary" id="btn-email">✉️ Email Me</a>
+            <a href="https://github.com/CharithaPalika" class="btn" id="btn-github" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+            <a href="#" class="btn" id="btn-scholar" target="_blank" rel="noopener noreferrer">🎓 Scholar</a>
+            <a href="resume/Charitha-Resume-001.pdf" class="btn" id="btn-cv" target="_blank" rel="noopener noreferrer">📄 CV (PDF)</a>
         </div>
     </section>
 
     <section id="education">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title"><span class="section-icon">🏛️</span> Education</h2>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-date">Ongoing</div>
                 <div class="timeline-title">Ph.D., Computational Neuroscience</div>
-                <div class="timeline-subtitle">IIT Madras • CGPA: 9.48</div>
+                <div class="timeline-subtitle">IIT Madras &bull; CGPA: 9.48</div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-date">2020</div>
                 <div class="timeline-title">M.Tech, Clinical Engineering</div>
-                <div class="timeline-subtitle">IIT Madras • CGPA: 9.82</div>
+                <div class="timeline-subtitle">IIT Madras &bull; CGPA: 9.82</div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-date">2018</div>
                 <div class="timeline-title">B.Tech, Biotechnology</div>
-                <div class="timeline-subtitle">NIT Warangal • CGPA: 8.57</div>
+                <div class="timeline-subtitle">NIT Warangal &bull; CGPA: 8.57</div>
             </div>
         </div>
     </section>
 
     <section id="research">
-        <h2 class="section-title">Ongoing Research</h2>
+        <h2 class="section-title"><span class="section-icon">🧠</span> Ongoing Research</h2>
         <div class="card-grid">
             <div class="glass-card">
+                <div class="card-glow"></div>
                 <h3>Adaptive Deep Brain Stimulation</h3>
                 <p>Formulated DBS as a sequential decision-making problem over neural state trajectories. Designed a PPO-based controller to optimize stimulation parameters.</p>
                 <div class="tags">
-                    <span class="tag">RL</span>
-                    <span class="tag">PPO</span>
-                    <span class="tag">Neuro-control</span>
+                    <span class="tag">RL</span><span class="tag">PPO</span><span class="tag">Neuro-control</span>
                 </div>
             </div>
             <div class="glass-card">
+                <div class="card-glow"></div>
                 <h3>Offline RL for L-DOPA Optimization</h3>
                 <p>Modeled medication dosing as an MDP using clinical data (PPMI dataset). Developed an offline Q-learning framework for safe policy learning.</p>
                 <div class="tags">
-                    <span class="tag">Offline RL</span>
-                    <span class="tag">Q-learning</span>
+                    <span class="tag">Offline RL</span><span class="tag">Q-learning</span>
                 </div>
             </div>
             <div class="glass-card">
-                <h3>Diet Optimization & Glucose Regulation</h3>
+                <div class="card-glow"></div>
+                <h3>Diet Optimization &amp; Glucose Regulation</h3>
                 <p>Designed an RL framework (LSTM + PPO) for personalized glucose regulation, handling delayed rewards and temporal dependencies.</p>
                 <div class="tags">
-                    <span class="tag">Sequential RL</span>
-                    <span class="tag">LSTM</span>
+                    <span class="tag">Sequential RL</span><span class="tag">LSTM</span>
                 </div>
             </div>
             <div class="glass-card">
+                <div class="card-glow"></div>
                 <h3>Multi-Agent Gut–Brain Regulation</h3>
                 <p>Modeled gut–brain interaction as a cooperative MARL system with decentralized policies trained via MAPPO.</p>
                 <div class="tags">
-                    <span class="tag">MARL</span>
-                    <span class="tag">MAPPO</span>
+                    <span class="tag">MARL</span><span class="tag">MAPPO</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="publications">
-        <h2 class="section-title">Selected Publications</h2>
+        <h2 class="section-title"><span class="section-icon">📚</span> Selected Publications</h2>
         <div class="card-grid">
-            <div class="glass-card">
+            <div class="glass-card pub-card">
+                <div class="card-glow"></div>
                 <h3>NutriRL: Benchmark for Nutritional Regulation</h3>
                 <div class="meta">Under review — RLC 2026</div>
                 <p>Introduced a novel RL benchmark with multi-channel delayed state dynamics.</p>
             </div>
-            <div class="glass-card">
+            <div class="glass-card pub-card">
+                <div class="card-glow"></div>
                 <h3>DBS for Exploration Optimization</h3>
                 <div class="meta">Under review — PLOS Computational Biology</div>
-                <p>Designed an RL-based computational framework for decision-making in Parkinson’s disease incorporating STN–GPe Desynchronization.</p>
+                <p>Designed an RL-based computational framework for decision-making in Parkinson's disease incorporating STN–GPe Desynchronization.</p>
             </div>
-            <div class="glass-card">
+            <div class="glass-card pub-card">
+                <div class="card-glow"></div>
                 <h3>RL Model of Dopamine-Mediated Appetite</h3>
                 <div class="meta">AD/PD 2026</div>
                 <p>Modeled appetite regulation using a Monte Carlo Actor Critic agent.</p>
             </div>
-            <div class="glass-card">
+            <div class="glass-card pub-card">
+                <div class="card-glow"></div>
                 <h3>Exploratory Dynamics in Basal Ganglia</h3>
                 <div class="meta">SfN 2024</div>
                 <p>Developed an RL model of the basal ganglia indirect pathway driven by chaotic attractors.</p>
@@ -126,72 +133,77 @@
     </section>
 
     <section id="projects">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title"><span class="section-icon">⚗️</span> Projects</h2>
         <div class="card-grid">
             <div class="glass-card">
+                <div class="card-glow"></div>
                 <h3>Graph Attention MARL</h3>
                 <p>Designed MARL framework using graph attention networks under partial observability, improving coordination in continuous control environments.</p>
                 <div class="tags">
-                    <span class="tag">MARL</span>
-                    <span class="tag">GAT</span>
+                    <span class="tag">MARL</span><span class="tag">GAT</span>
                 </div>
             </div>
             <div class="glass-card">
+                <div class="card-glow"></div>
                 <h3>Attention-Enhanced RealNVP</h3>
                 <p>Extended flow-based models with attention-based coupling layers (CBAM), improving high-dimensional density estimation.</p>
                 <div class="tags">
-                    <span class="tag">Flow Models</span>
-                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Flow Models</span><span class="tag">Computer Vision</span>
                 </div>
             </div>
             <div class="glass-card">
+                <div class="card-glow"></div>
                 <h3>GRU-Based Robotic Control</h3>
                 <p>Trained recurrent neural networks for 2-link arm control in MuJoCo and analyzed stability via fixed points.</p>
                 <div class="tags">
-                    <span class="tag">RNN</span>
-                    <span class="tag">MuJoCo</span>
+                    <span class="tag">RNN</span><span class="tag">MuJoCo</span>
                 </div>
             </div>
             <div class="glass-card">
+                <div class="card-glow"></div>
                 <h3>RGB to Thermal Image Translation</h3>
                 <p>Implemented cross-domain translation using Pix2Pix GAN, U-Net++, and MANet, evaluating thermal reconstruction performance.</p>
                 <div class="tags">
-                    <span class="tag">GAN</span>
-                    <span class="tag">Pix2Pix</span>
+                    <span class="tag">GAN</span><span class="tag">Pix2Pix</span>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="skills">
-        <h2 class="section-title">Skills & Achievements</h2>
-        
-        <div style="margin-bottom: 40px;">
+        <h2 class="section-title"><span class="section-icon">🏆</span> Skills &amp; Achievements</h2>
+        <div class="skills-section">
             <div class="skills-list">
-                <div class="skill-item">Python</div>
-                <div class="skill-item">PyTorch</div>
-                <div class="skill-item">OpenCV</div>
-                <div class="skill-item">Scikit-learn</div>
-                <div class="skill-item">Gymnasium</div>
-                <div class="skill-item">MuJoCo</div>
-                <div class="skill-item">TorchRL</div>
-                <div class="skill-item">PettingZoo</div>
+                <div class="skill-item">🐍 Python</div>
+                <div class="skill-item">🔥 PyTorch</div>
+                <div class="skill-item">👁️ OpenCV</div>
+                <div class="skill-item">📊 Scikit-learn</div>
+                <div class="skill-item">🤸 Gymnasium</div>
+                <div class="skill-item">🤖 MuJoCo</div>
+                <div class="skill-item">⚡ TorchRL</div>
+                <div class="skill-item">🐾 PettingZoo</div>
             </div>
         </div>
-
-        <ul class="achievements-list">
-            <li>Institute Merit Prize (M.Tech) for best academic record in Biotechnology, IIT Madras.</li>
-            <li>American Express Award, Dr. S.S. Srikanta Prize, P K Narayana Iyer Prize for academic excellence.</li>
-            <li>Buti Foundation Gold Medal for best academic record (women) amongst DD/M.Tech/M.Sc/BS/MS.</li>
-            <li>GATE Biotechnology (2018): AIR 15.</li>
-            <li>Joint CSIR-UGC NET Lifesciences (2018): AIR 113.</li>
-        </ul>
+        <div class="achievements-section">
+            <h3 class="achievements-heading">Awards</h3>
+            <ul class="achievements-list">
+                <li><span class="ach-icon">🥇</span> Institute Merit Prize (M.Tech) for best academic record in Biotechnology, IIT Madras.</li>
+                <li><span class="ach-icon">🏅</span> American Express Award, Dr. S.S. Srikanta Prize, P K Narayana Iyer Prize for academic excellence.</li>
+                <li><span class="ach-icon">🏆</span> Buti Foundation Gold Medal for best academic record (women) amongst DD/M.Tech/M.Sc/BS/MS.</li>
+                <li><span class="ach-icon">🎯</span> GATE Biotechnology (2018): AIR 15.</li>
+                <li><span class="ach-icon">🎯</span> Joint CSIR-UGC NET Lifesciences (2018): AIR 113.</li>
+            </ul>
+        </div>
     </section>
 </div>
 
 <footer>
     <div class="container">
-        © 2026 Charitha Palika | Built with HTML, CSS & JS
+        <div class="footer-content">
+            <span>Made with 💜 by Charitha Palika</span>
+            <span class="footer-sep">·</span>
+            <span>© 2026</span>
+        </div>
     </div>
 </footer>
 
