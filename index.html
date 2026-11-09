@@ -23,10 +23,10 @@
         </div>
         <div class="nav-links">
             <a href="#about" class="nav-link">About</a>
-            <a href="#education" class="nav-link">Education</a>
             <a href="#research" class="nav-link">Research</a>
             <a href="#publications" class="nav-link">Publications</a>
             <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
             <a href="#skills" class="nav-link">Skills</a>
         </div>
     </div>
@@ -48,7 +48,7 @@
                     REINFORCEMENT LEARNING <span class="subtitle-divider">×</span> COMPUTATIONAL NEUROSCIENCE
                 </div>
 
-                <p>I build reinforcement learning systems informed by neuroscience, from adaptive brain stimulation to physiological regulation. My research combines computational models, sequential decision-making and clinical questions to explore how AI can support better healthcare.</p>
+                <p>I’m a PhD researcher at IIT Madras working on reinforcement learning and computational neuroscience. I study how learning algorithms can adapt brain stimulation and model physiological regulation.</p>
 
                 <div class="hero-links">
                     <a href="mailto:charithapalika@gmail.com" class="btn primary" id="btn-email">✉ Email Me</a>
@@ -75,15 +75,136 @@
             <div class="symposium-content">
                 <p class="symposium-eyebrow">Research presenter</p>
                 <h2>Google DeepMind<br>APAC Research Symposium</h2>
-                <p>Presented my research at the 2026 symposium, connecting with the AI research community across the Asia-Pacific region.</p>
+                <p>Presented research on event-driven reinforcement learning for adaptive neuromodulation.</p>
             </div>
             <span class="symposium-mark" aria-hidden="true">✳</span>
         </aside>
         <span class="section-stop" aria-hidden="true"></span>
     </section>
 
+    <section id="research">
+        <h2 class="section-title"><span class="comment-prefix">01 /</span> Ongoing Research</h2>
+        <article class="featured-research">
+            <div class="featured-research-copy">
+                <p class="featured-eyebrow">Featured research <span>·</span> Computational neuroscience × RL</p>
+                <h3>Event-driven reinforcement learning for adaptive neuromodulation</h3>
+                <p>How can a controller learn when—and how strongly—to stimulate? I developed a Soft Actor-Critic policy that adjusts pulse timing and amplitude in a simulated Parkinsonian spiking neural network.</p>
+                <p class="featured-context">Compared with standard DBS in simulation; results reflect neural network modeling, not clinical outcomes.</p>
+                <div class="tags"><span class="tag">Adaptive DBS</span><span class="tag">Soft Actor-Critic</span><span class="tag">Spiking neural networks</span></div>
+            </div>
+            <div class="research-results" aria-label="Simulation results compared with standard DBS">
+                <p>Simulation results <span>vs standard DBS</span></p>
+                <div><strong>88%</strong><span>beta power suppression<br><small>47% with standard DBS</small></span></div>
+                <div><strong>~94%</strong><span>less delivered charge</span></div>
+                <div><strong>21 <small>vs</small> 130</strong><span>pulses per second</span></div>
+            </div>
+        </article>
+        <h3 class="research-more-heading">More research</h3>
+        <div class="card-grid">
+            <div class="glass-card">
+                <div class="card-glow"></div>
+                <h3>Adaptive Deep Brain Stimulation</h3>
+                <p>Formulated DBS as a sequential decision-making problem over neural state trajectories. Designed a PPO-based controller to optimize stimulation parameters.</p>
+                <div class="tags">
+                    <span class="tag">RL</span><span class="tag">PPO</span><span class="tag">Neuro-control</span>
+                </div>
+            </div>
+            <div class="glass-card">
+                <div class="card-glow"></div>
+                <h3>Offline RL for L-DOPA Optimization</h3>
+                <p>Modeled medication dosing as an MDP using clinical data (PPMI dataset). Developed an offline Q-learning framework for safe policy learning.</p>
+                <div class="tags">
+                    <span class="tag">Offline RL</span><span class="tag">Q-learning</span>
+                </div>
+            </div>
+            <div class="glass-card">
+                <div class="card-glow"></div>
+                <h3>Diet Optimization &amp; Glucose Regulation</h3>
+                <p>Designed an RL framework (LSTM + PPO) for personalized glucose regulation, handling delayed rewards and temporal dependencies.</p>
+                <div class="tags">
+                    <span class="tag">Sequential RL</span><span class="tag">LSTM</span>
+                </div>
+            </div>
+            <div class="glass-card">
+                <div class="card-glow"></div>
+                <h3>Multi-Agent Gut–Brain Regulation</h3>
+                <p>Modeled gut–brain interaction as a cooperative MARL system with decentralized policies trained via MAPPO.</p>
+                <div class="tags">
+                    <span class="tag">MARL</span><span class="tag">MAPPO</span>
+                </div>
+            </div>
+        </div>
+        <span class="section-stop" aria-hidden="true"></span>
+    </section>
+    <section id="publications">
+        <h2 class="section-title"><span class="comment-prefix">02 /</span> Publications</h2>
+        <div class="card-grid">
+            <div class="glass-card pub-card">
+                <div class="card-glow"></div>
+                <div class="meta">Reinforcement Learning Journal · 2026</div>
+                <h3>NutriRL: A Benchmark for Nutritional Regulation under Delayed State Transitions</h3>
+                <p class="pub-authors">Aniket Khan, Charitha Palika, V. Srinivasa Chakravarthy</p>
+                <p>A reinforcement learning benchmark for regulating multiple nutrients when physiological effects arrive after a delay.</p>
+                <div class="pub-links">
+                    <a href="https://rlj.cs.umass.edu/2026/papers/Paper78.html" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
+                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=V-wT19sAAAAJ&amp;citation_for_view=V-wT19sAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+                </div>
+            </div>
+            <div class="glass-card pub-card">
+                <div class="card-glow"></div>
+                <div class="meta">SSRN preprint · 2026</div>
+                <h3>Faulty States, Faulty Learning: Distinct Routes to Dysregulated Feeding in Homeostatic Reinforcement Learning</h3>
+                <p class="pub-authors">Charitha Palika, Aniket Khan, Roshan Maradana, Srinivas Chakravarthy</p>
+                <p>Explores how distorted physiological state representations and altered reward learning can each disrupt feeding behavior.</p>
+                <div class="pub-links">
+                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7560808" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
+                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=V-wT19sAAAAJ&amp;citation_for_view=V-wT19sAAAAJ:UeHWp8X0CEIC" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+                </div>
+            </div>
+        </div>
+        <span class="section-stop" aria-hidden="true"></span>
+    </section>
+    <section id="projects">
+        <h2 class="section-title"><span class="comment-prefix">03 /</span> Projects</h2>
+        <div class="card-grid">
+            <div class="glass-card">
+                <div class="card-glow"></div>
+                <h3>Graph Attention MARL</h3>
+                <p>Used graph attention to coordinate agents under partial observability in continuous-control environments. The course project outperformed a MADDPG baseline on Predator–Prey and Battlefield tasks.</p>
+                <div class="tags">
+                    <span class="tag">MARL</span><span class="tag">GAT</span>
+                </div>
+            </div>
+            <div class="glass-card">
+                <div class="card-glow"></div>
+                <h3>Attention-Enhanced RealNVP</h3>
+                <p>Extended flow-based models with attention-based coupling layers (CBAM), improving high-dimensional density estimation.</p>
+                <div class="tags">
+                    <span class="tag">Flow Models</span><span class="tag">Computer Vision</span>
+                </div>
+                <div class="pub-links"><a href="https://github.com/CharithaPalika/Attention-Enhanced-REALNVP" target="_blank" rel="noopener noreferrer">View code ↗</a></div>
+            </div>
+            <div class="glass-card">
+                <div class="card-glow"></div>
+                <h3>GRU-Based Robotic Control</h3>
+                <p>Trained recurrent neural networks for 2-link arm control in MuJoCo and analyzed stability via fixed points.</p>
+                <div class="tags">
+                    <span class="tag">RNN</span><span class="tag">MuJoCo</span>
+                </div>
+            </div>
+            <div class="glass-card">
+                <div class="card-glow"></div>
+                <h3>RGB to Thermal Image Translation</h3>
+                <p>Implemented cross-domain translation using Pix2Pix GAN, U-Net++, and MANet, evaluating thermal reconstruction performance.</p>
+                <div class="tags">
+                    <span class="tag">GAN</span><span class="tag">Pix2Pix</span>
+                </div>
+            </div>
+        </div>
+        <span class="section-stop" aria-hidden="true"></span>
+    </section>
     <section id="education">
-        <h2 class="section-title"><span class="comment-prefix">01 /</span> Education</h2>
+        <h2 class="section-title"><span class="comment-prefix">04 /</span> Education</h2>
         <div class="education-collage">
             <article class="education-degree">
                 <figure class="education-visual education-visual--phd">
@@ -141,130 +262,6 @@
         </div>
         <span class="section-stop" aria-hidden="true"></span>
     </section>
-
-    <section id="research">
-        <h2 class="section-title"><span class="comment-prefix">02 /</span> Ongoing Research</h2>
-        <article class="featured-research">
-            <div class="featured-research-copy">
-                <p class="featured-eyebrow">Featured research <span>·</span> Computational neuroscience × RL</p>
-                <h3>Event-driven reinforcement learning for adaptive neuromodulation</h3>
-                <p>How can a controller learn when—and how strongly—to stimulate? I developed a Soft Actor-Critic policy that adjusts pulse timing and amplitude in a simulated Parkinsonian spiking neural network.</p>
-                <p class="featured-context">Compared with standard DBS in simulation; results reflect neural network modeling, not clinical outcomes.</p>
-                <div class="tags"><span class="tag">Adaptive DBS</span><span class="tag">Soft Actor-Critic</span><span class="tag">Spiking neural networks</span></div>
-            </div>
-            <div class="research-results" aria-label="Simulation results compared with standard DBS">
-                <p>Simulation results <span>vs standard DBS</span></p>
-                <div><strong>88%</strong><span>beta power suppression<br><small>47% with standard DBS</small></span></div>
-                <div><strong>~94%</strong><span>less delivered charge</span></div>
-                <div><strong>21 <small>vs</small> 130</strong><span>pulses per second</span></div>
-            </div>
-        </article>
-        <h3 class="research-more-heading">More research</h3>
-        <div class="card-grid">
-            <div class="glass-card">
-                <div class="card-glow"></div>
-                <h3>Adaptive Deep Brain Stimulation</h3>
-                <p>Formulated DBS as a sequential decision-making problem over neural state trajectories. Designed a PPO-based controller to optimize stimulation parameters.</p>
-                <div class="tags">
-                    <span class="tag">RL</span><span class="tag">PPO</span><span class="tag">Neuro-control</span>
-                </div>
-            </div>
-            <div class="glass-card">
-                <div class="card-glow"></div>
-                <h3>Offline RL for L-DOPA Optimization</h3>
-                <p>Modeled medication dosing as an MDP using clinical data (PPMI dataset). Developed an offline Q-learning framework for safe policy learning.</p>
-                <div class="tags">
-                    <span class="tag">Offline RL</span><span class="tag">Q-learning</span>
-                </div>
-            </div>
-            <div class="glass-card">
-                <div class="card-glow"></div>
-                <h3>Diet Optimization &amp; Glucose Regulation</h3>
-                <p>Designed an RL framework (LSTM + PPO) for personalized glucose regulation, handling delayed rewards and temporal dependencies.</p>
-                <div class="tags">
-                    <span class="tag">Sequential RL</span><span class="tag">LSTM</span>
-                </div>
-            </div>
-            <div class="glass-card">
-                <div class="card-glow"></div>
-                <h3>Multi-Agent Gut–Brain Regulation</h3>
-                <p>Modeled gut–brain interaction as a cooperative MARL system with decentralized policies trained via MAPPO.</p>
-                <div class="tags">
-                    <span class="tag">MARL</span><span class="tag">MAPPO</span>
-                </div>
-            </div>
-        </div>
-        <span class="section-stop" aria-hidden="true"></span>
-    </section>
-
-    <section id="publications">
-        <h2 class="section-title"><span class="comment-prefix">03 /</span> Publications</h2>
-        <div class="card-grid">
-            <div class="glass-card pub-card">
-                <div class="card-glow"></div>
-                <div class="meta">Reinforcement Learning Journal · 2026</div>
-                <h3>NutriRL: A Benchmark for Nutritional Regulation under Delayed State Transitions</h3>
-                <p class="pub-authors">Aniket Khan, Charitha Palika, V. Srinivasa Chakravarthy</p>
-                <p>A reinforcement learning benchmark for regulating multiple nutrients when physiological effects arrive after a delay.</p>
-                <div class="pub-links">
-                    <a href="https://rlj.cs.umass.edu/2026/papers/Paper78.html" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=V-wT19sAAAAJ&amp;citation_for_view=V-wT19sAAAAJ:qjMakFHDy7sC" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
-                </div>
-            </div>
-            <div class="glass-card pub-card">
-                <div class="card-glow"></div>
-                <div class="meta">SSRN preprint · 2026</div>
-                <h3>Faulty States, Faulty Learning: Distinct Routes to Dysregulated Feeding in Homeostatic Reinforcement Learning</h3>
-                <p class="pub-authors">Charitha Palika, Aniket Khan, Roshan Maradana, Srinivas Chakravarthy</p>
-                <p>Explores how distorted physiological state representations and altered reward learning can each disrupt feeding behavior.</p>
-                <div class="pub-links">
-                    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7560808" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
-                    <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=V-wT19sAAAAJ&amp;citation_for_view=V-wT19sAAAAJ:UeHWp8X0CEIC" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
-                </div>
-            </div>
-        </div>
-        <span class="section-stop" aria-hidden="true"></span>
-    </section>
-
-    <section id="projects">
-        <h2 class="section-title"><span class="comment-prefix">04 /</span> Projects</h2>
-        <div class="card-grid">
-            <div class="glass-card">
-                <div class="card-glow"></div>
-                <h3>Graph Attention MARL</h3>
-                <p>Designed MARL framework using graph attention networks under partial observability, improving coordination in continuous control environments.</p>
-                <div class="tags">
-                    <span class="tag">MARL</span><span class="tag">GAT</span>
-                </div>
-            </div>
-            <div class="glass-card">
-                <div class="card-glow"></div>
-                <h3>Attention-Enhanced RealNVP</h3>
-                <p>Extended flow-based models with attention-based coupling layers (CBAM), improving high-dimensional density estimation.</p>
-                <div class="tags">
-                    <span class="tag">Flow Models</span><span class="tag">Computer Vision</span>
-                </div>
-            </div>
-            <div class="glass-card">
-                <div class="card-glow"></div>
-                <h3>GRU-Based Robotic Control</h3>
-                <p>Trained recurrent neural networks for 2-link arm control in MuJoCo and analyzed stability via fixed points.</p>
-                <div class="tags">
-                    <span class="tag">RNN</span><span class="tag">MuJoCo</span>
-                </div>
-            </div>
-            <div class="glass-card">
-                <div class="card-glow"></div>
-                <h3>RGB to Thermal Image Translation</h3>
-                <p>Implemented cross-domain translation using Pix2Pix GAN, U-Net++, and MANet, evaluating thermal reconstruction performance.</p>
-                <div class="tags">
-                    <span class="tag">GAN</span><span class="tag">Pix2Pix</span>
-                </div>
-            </div>
-        </div>
-        <span class="section-stop" aria-hidden="true"></span>
-    </section>
-
     <section id="skills">
         <h2 class="section-title"><span class="comment-prefix">05 /</span> Skills &amp; Achievements</h2>
         <div class="skills-section">
