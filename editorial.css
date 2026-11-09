@@ -141,6 +141,13 @@ nav { background: rgba(255, 255, 255, .96); border-bottom: 1px solid #dedede; }
 .symposium-content h2 { color: #fff; font-size: clamp(1.5rem, 2.5vw, 2.4rem); letter-spacing: -.04em; line-height: 1.16; }
 .symposium-content > p:last-child { margin: 16px 0 0; max-width: 55ch; color: #c8c8c8; font-size: .88rem; line-height: 1.6; }
 .symposium-mark { font-size: 1.6rem; line-height: 1; color: #aaa; }
+.research-highlights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 14px; }
+.highlight-card { display: flex; flex-direction: column; min-width: 0; padding: clamp(24px, 3vw, 32px); border: 1px solid #dedede; background: #fafaf9; }
+.highlight-card .highlight-label { display: flex; justify-content: space-between; gap: 12px; max-width: none; margin: 0 0 18px; color: #777; font: 500 .65rem var(--font-mono); letter-spacing: .08em; text-transform: uppercase; }
+.highlight-card h3 { margin: 0 0 12px; color: #111; font-size: clamp(1.2rem, 1.8vw, 1.55rem); line-height: 1.25; letter-spacing: -.03em; }
+.highlight-card > p:not(.highlight-label) { margin: 0 0 18px; color: #555; font-size: .87rem; line-height: 1.6; }
+.highlight-card a { align-self: flex-start; margin-top: auto; color: #222; font-size: .8rem; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
+.highlight-card a:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
 
 section { padding-top: clamp(60px, 7vw, 80px); padding-bottom: clamp(60px, 7vw, 80px); scroll-snap-align: start; scroll-snap-stop: always; }
 section:not(:last-child) { border-bottom: 1px solid #d5d5d5; }
@@ -240,6 +247,7 @@ section:not(:last-child)::after {
     .education-copy { padding-top: 14px; }
     .symposium-feature { grid-template-columns: 1fr auto; gap: 18px; }
     .symposium-label { grid-column: 1 / -1; flex-direction: row; gap: 12px; }
+    .research-highlights { grid-template-columns: 1fr; }
     .featured-research { grid-template-columns: 1fr; }
     .research-results { padding-left: 0; border-left: 0; }
     .card-grid { grid-template-columns: 1fr; }
