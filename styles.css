@@ -1,6 +1,6 @@
 /* ============================================================
-   CODER'S VIBE — Apple Dark Mode × Terminal Aesthetic
-   Palette:  Apple system dark colors (Xcode / macOS)
+   NEUROHEALTH VIBE - Clinical dark mode x artificial neurons
+   Palette:  Deep navy, cyan data flow, medical green, amber reward
    Display:  JetBrains Mono (comment prefix) + SF Pro (titles)
    Feel:     Terminal energy with Apple-grade polish
    ============================================================ */
@@ -8,20 +8,20 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
 
 :root {
-    /* Apple Dark Mode System Colors */
-    --bg-base:         #000000;
-    --bg-mid:          #0a0a0a;
-    --bg-surface:      #111111;
-    --bg-elevated:     #1a1a1a;
+    /* Clinical Dark Mode System Colors */
+    --bg-base:         #020812;
+    --bg-mid:          #061321;
+    --bg-surface:      #081827;
+    --bg-elevated:     #0c2031;
 
-    /* Apple Accent Colors */
-    --accent-blue:     #0A84FF;
-    --accent-green:    #30D158;
-    --accent-orange:   #FF9F0A;
-    --accent-cyan:     #64D2FF;
-    --accent-red:      #FF453A;
-    --accent-purple:   #BF5AF2;
-    --accent-yellow:   #FFD60A;
+    /* Neurohealth Accent Colors */
+    --accent-blue:     #12A8FF;
+    --accent-green:    #4EE6B0;
+    --accent-orange:   #F6B44B;
+    --accent-cyan:     #43D9FF;
+    --accent-red:      #FF6B6B;
+    --accent-purple:   #8FB9FF;
+    --accent-yellow:   #FFE08A;
 
     /* Text */
     --text-main:       #F5F5F7;
@@ -34,8 +34,8 @@
     --glass-bg:        rgba(255, 255, 255, 0.03);
     --glass-border:    rgba(255, 255, 255, 0.08);
     --glass-hover:     rgba(255, 255, 255, 0.06);
-    --terminal-chrome: #1c1c1e;
-    --terminal-bar:    #2c2c2e;
+    --terminal-chrome: rgba(5, 18, 31, 0.88);
+    --terminal-bar:    rgba(12, 32, 49, 0.92);
 
     /* System */
     --border-radius:   14px;
@@ -50,6 +50,9 @@ html { scroll-behavior: smooth; }
 
 body {
     font-family: var(--font-system);
+    background:
+        radial-gradient(circle at 80% 20%, rgba(18, 168, 255, 0.11), transparent 32%),
+        linear-gradient(135deg, #020812 0%, #04101d 46%, #061827 100%);
     background-color: var(--bg-base);
     color: var(--text-main);
     line-height: 1.75;
@@ -82,9 +85,9 @@ body::after {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background:
-        radial-gradient(ellipse 55% 38% at 12% 18%, rgba(10, 132, 255, 0.07) 0%, transparent 60%),
-        radial-gradient(ellipse 45% 32% at 88% 72%, rgba(48, 209, 88, 0.05) 0%, transparent 60%),
-        radial-gradient(ellipse 38% 28% at 52% 95%, rgba(100, 210, 255, 0.04) 0%, transparent 50%);
+        radial-gradient(ellipse 55% 38% at 8% 16%, rgba(67, 217, 255, 0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 45% 32% at 90% 70%, rgba(78, 230, 176, 0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 38% 28% at 52% 95%, rgba(246, 180, 75, 0.035) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
 }
@@ -112,13 +115,14 @@ a:hover { color: var(--accent-cyan); }
     box-shadow: 0 0 8px rgba(10, 132, 255, 0.6);
 }
 
-/* ---- Particle Canvas ---- */
+/* ---- Artificial Neuron Canvas ---- */
 #particle-canvas {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
     pointer-events: none;
     z-index: 0;
+    opacity: 0.86;
 }
 
 /* ---- Layout ---- */
@@ -535,8 +539,12 @@ nav {
 }
 
 /* Publication cards */
-.pub-card { border-left: 2px solid rgba(10, 132, 255, 0.2); }
+.pub-card { border-left: 2px solid rgba(67, 217, 255, 0.25); }
 .pub-card:hover { border-left-color: var(--accent-blue); }
+.pub-card .pub-authors { color: var(--text-secondary); font-size: 0.81rem; margin-bottom: 12px; }
+.pub-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 20px; }
+.pub-links a { font-family: var(--font-mono); font-size: 0.76rem; font-weight: 500; }
+.pub-links a:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 4px; border-radius: 2px; }
 
 /* ---- Tags — IDE code tokens ---- */
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
