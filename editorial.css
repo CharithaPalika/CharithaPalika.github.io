@@ -35,10 +35,14 @@ body::before, body::after { display: none; }
 #progress-bar { background: #111; box-shadow: none; }
 
 .container, .nav-content { max-width: 1140px; }
-nav { background: rgba(255, 255, 255, .96); border-bottom: 1px solid #dedede; }
-.nav-link:hover, .nav-link.active { background: #f1f1f1; }
-.nav-logo { display: flex; align-items: baseline; gap: 10px; font-family: var(--font-system); color: #111; }
-.nav-monogram { font-size: 1.18rem; font-weight: 800; letter-spacing: -.07em; }
+nav { background: rgba(255, 255, 255, .97); border-bottom: 1px solid #e2e2e2; }
+.nav-links { gap: clamp(0px, 1vw, 12px); }
+.nav-link { position: relative; padding: 5px 8px; border-radius: 0; color: #595959; transition: color .2s ease; }
+.nav-link:hover, .nav-link.active { background: transparent; color: #111; }
+.nav-link::after { content: ''; position: absolute; left: 8px; right: 8px; bottom: 2px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .2s ease; }
+.nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
+.nav-logo { display: flex; align-items: baseline; gap: 10px; flex-shrink: 0; font-family: var(--font-system); color: #111; text-decoration: none; }
+.nav-monogram { font-size: 1.18rem; font-weight: 800; letter-spacing: -.04em; }
 .nav-name { font-size: .78rem; font-weight: 600; letter-spacing: -.01em; }
 
 .hero { display: block; min-height: auto; padding-top: 112px; padding-bottom: 72px; isolation: isolate; }
@@ -81,18 +85,6 @@ nav { background: rgba(255, 255, 255, .96); border-bottom: 1px solid #dedede; }
     margin-bottom: 22px;
 }
 .hero-period { color: #777; -webkit-text-fill-color: #777; }
-.subtitle {
-    margin-bottom: 24px;
-    min-height: 0;
-    color: #505050;
-    font-size: .9rem;
-    font-weight: 500;
-    letter-spacing: 0;
-    font-family: var(--font-system);
-    flex-wrap: wrap;
-    column-gap: 8px;
-}
-.subtitle-divider { color: #999; }
 .hero p { color: #3e3e3e; font-size: 1rem; max-width: 56ch; margin-bottom: 24px; line-height: 1.7; }
 .hero-links { gap: 8px; }
 .hero .availability { margin: 16px 0 0; color: #666; font-size: .85rem; }
@@ -221,6 +213,9 @@ section:not(:last-child)::after {
 .education-copy h3 span { display: block; font-size: .77em; font-weight: 500; letter-spacing: -.015em; margin-top: 3px; }
 .education-copy p { margin: 0; max-width: 40ch; color: #595959; font-size: .86rem; line-height: 1.6; }
 .education-copy p span { color: #aaa; padding: 0 2px; }
+.coursework-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 36px; margin: 0; padding: 0; list-style: none; }
+.coursework-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 18px 0; border-top: 1px solid #d5d5d5; color: #111; font-size: .98rem; line-height: 1.5; }
+.coursework-list li span:last-child { flex: none; color: #777; font: 500 .75rem var(--font-system); letter-spacing: .04em; }
 .photo-credits { margin: 18px 0 0; max-width: 650px; color: #666; font-size: .75rem; line-height: 1.6; text-align: left; }
 .photo-credits summary { width: fit-content; margin: auto; cursor: pointer; }
 .photo-credits p { margin: 10px 0 0; }
@@ -240,12 +235,16 @@ footer { scroll-snap-align: end; scroll-snap-stop: always; }
 .photo-credits summary { margin-left: 0; }
 
 @media (max-width: 840px) {
+    .nav-content { gap: 20px; }
+    .nav-links { min-width: 0; overflow-x: auto; }
+    .nav-link { flex: 0 0 auto; white-space: nowrap; }
     .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(250px, 40%); gap: 24px; }
     .hero h1 { font-size: clamp(3.4rem, 8vw, 5.5rem); }
     .education-collage { grid-template-columns: 1fr; gap: 38px; }
     .education-visual { height: clamp(250px, 42vw, 340px); }
 }
 @media (max-width: 680px) {
+    .coursework-list { grid-template-columns: 1fr; }
     html { scroll-padding-top: 112px; }
     nav { padding: 9px 0; }
     .nav-content { flex-direction: column; align-items: stretch; gap: 6px; }
@@ -274,6 +273,7 @@ footer { scroll-snap-align: end; scroll-snap-stop: always; }
     .footer-contact { align-items: flex-start; flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) {
+    .nav-link, .nav-link::after { transition: none; }
     html { scroll-snap-type: none; scroll-behavior: auto; }
     .portrait-frame img { transition: none; }
     .education-photo img { transition: none; }
