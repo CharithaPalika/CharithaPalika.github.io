@@ -130,6 +130,14 @@ nav { background: rgba(255, 255, 255, .96); border-bottom: 1px solid #dedede; }
 .profile-facts dd { margin: 0; color: #111; font-size: .98rem; font-weight: 600; line-height: 1.45; }
 .profile-facts dd span { display: block; color: #555; font-size: .83rem; font-weight: 400; }
 
+.symposium-feature { display: grid; grid-template-columns: 180px minmax(0, 1fr) auto; gap: 34px; align-items: start; margin-top: 34px; padding: clamp(26px, 4vw, 48px); background: #111; color: #fff; }
+.symposium-label { display: flex; flex-direction: column; gap: 7px; color: #aaa; font: 500 .66rem var(--font-mono); letter-spacing: .1em; text-transform: uppercase; }
+.symposium-label span { color: #fff; }
+.symposium-content .symposium-eyebrow { margin: 0 0 12px; color: #aaa; font: 500 .66rem var(--font-mono); letter-spacing: .12em; text-transform: uppercase; }
+.symposium-content h2 { color: #fff; font-size: clamp(1.65rem, 3vw, 2.8rem); letter-spacing: -.045em; line-height: 1.12; }
+.symposium-content > p:last-child { margin: 16px 0 0; max-width: 55ch; color: #c8c8c8; font-size: .88rem; line-height: 1.6; }
+.symposium-mark { font-size: 1.6rem; line-height: 1; color: #aaa; }
+
 section { padding-top: 100px; padding-bottom: 100px; scroll-snap-align: start; scroll-snap-stop: always; }
 section:not(:last-child) { border-bottom: 1px solid #d5d5d5; }
 section .section-stop { position: absolute; left: 0; bottom: 0; width: 1px; height: 1px; scroll-snap-align: end; scroll-snap-stop: always; }
@@ -153,6 +161,19 @@ section:not(:last-child)::after {
 .pub-card { border-left: 2px solid #222; }
 .tag { color: #333; background: #f5f5f5; border-color: #d7d7d7; }
 .tag:hover { color: #111; background: #eee; box-shadow: none; border-color: #aaa; }
+.featured-research { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(240px, .75fr); gap: clamp(28px, 5vw, 64px); padding: clamp(26px, 4vw, 48px); background: #f3f3f1; border: 1px solid #e3e3e1; }
+.featured-eyebrow, .research-results > p { margin: 0 0 20px; color: #666; font: 500 .67rem var(--font-mono); letter-spacing: .08em; line-height: 1.6; text-transform: uppercase; }
+.featured-research h3 { margin: 0 0 20px; max-width: 22ch; font-size: clamp(1.8rem, 3vw, 2.9rem); line-height: 1.08; letter-spacing: -.045em; color: #111; }
+.featured-research-copy > p:not(.featured-eyebrow) { margin: 0 0 18px; color: #3e3e3e; font-size: .95rem; line-height: 1.7; }
+.featured-research-copy > .featured-context { color: #666 !important; font-size: .78rem !important; }
+.research-results { border-left: 1px solid #ccc; padding-left: clamp(24px, 3vw, 40px); }
+.research-results > p span { display: block; color: #888; text-transform: none; letter-spacing: 0; }
+.research-results > div { padding: 17px 0; border-top: 1px solid #d2d2d0; }
+.research-results strong { display: block; color: #111; font-size: clamp(2rem, 3vw, 2.8rem); line-height: 1.1; letter-spacing: -.05em; }
+.research-results strong small { font-size: .36em; color: #888; letter-spacing: 0; }
+.research-results div > span { display: block; margin-top: 6px; color: #444; font-size: .8rem; line-height: 1.45; }
+.research-results div > span small { color: #777; font-size: .9em; }
+.research-more-heading { margin: 44px 0 22px; color: #111; font-size: 1.1rem; }
 .education-collage { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-items: start; }
 .education-degree { min-width: 0; }
 .education-visual { display: grid; height: 320px; overflow: hidden; }
@@ -200,6 +221,10 @@ section:not(:last-child)::after {
     .profile-facts > div:first-child { border-top: 0; }
     .education-visual { height: clamp(220px, 56vw, 330px); }
     .education-copy { padding-top: 14px; }
+    .symposium-feature { grid-template-columns: 1fr auto; gap: 18px; }
+    .symposium-label { grid-column: 1 / -1; flex-direction: row; gap: 12px; }
+    .featured-research { grid-template-columns: 1fr; }
+    .research-results { padding-left: 0; border-left: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
     html { scroll-snap-type: none; scroll-behavior: auto; }
