@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="editorial.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <div id="progress-bar"></div>
 <canvas id="particle-canvas"></canvas>
 
-<nav>
+<nav aria-label="Main navigation">
     <div class="nav-content">
         <div class="nav-logo">
             <span class="nav-monogram">CP.</span><span class="nav-name">Charitha Palika</span>
@@ -32,36 +33,31 @@
     </div>
 </nav>
 
-<div class="container">
+<main class="container" id="main-content" tabindex="-1">
     <section class="hero" id="about">
         <div class="hero-mesh" aria-hidden="true"></div>
         <div class="hero-grid">
             <div class="hero-copy">
-                <div class="hero-badge">
-                    <span class="status-dot"></span>
-                    Open to Collaborations
-                </div>
-
                 <h1>Charitha<br>Palika<span class="hero-period">.</span></h1>
 
                 <div class="subtitle">
-                    REINFORCEMENT LEARNING <span class="subtitle-divider">×</span> COMPUTATIONAL NEUROSCIENCE
+                    Reinforcement learning <span class="subtitle-divider">×</span> Computational neuroscience
                 </div>
 
-                <p>I’m a PhD researcher at IIT Madras working on reinforcement learning and computational neuroscience. I study how learning algorithms can adapt brain stimulation and model physiological regulation.</p>
+                <p>PhD researcher at IIT Madras working on reinforcement learning and computational neuroscience, with a focus on adaptive brain stimulation and physiological regulation.</p>
 
                 <div class="hero-links">
-                    <a href="mailto:charithapalika@gmail.com" class="btn primary" id="btn-email">✉ Email Me</a>
-                    <a href="https://github.com/CharithaPalika" class="btn" id="btn-github" target="_blank" rel="noopener noreferrer">⌥ GitHub</a>
-                    <a href="https://scholar.google.com/citations?hl=en&amp;user=V-wT19sAAAAJ" class="btn" id="btn-scholar" target="_blank" rel="noopener noreferrer">⊕ Scholar</a>
-                    <a href="resume/Charitha-Resume-001.pdf" class="btn" id="btn-cv" target="_blank" rel="noopener noreferrer">↓ CV (PDF)</a>
+                    <a href="mailto:charithapalika@gmail.com" class="btn" id="btn-email">Email</a>
+                    <a href="https://github.com/CharithaPalika" class="btn" id="btn-github" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://scholar.google.com/citations?hl=en&amp;user=V-wT19sAAAAJ" class="btn" id="btn-scholar" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                    <a href="resume/Charitha-Resume-001.pdf" class="btn" id="btn-cv" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
                 </div>
+                <p class="availability">Open to research collaborations.</p>
             </div>
             <figure class="hero-portrait">
                 <div class="portrait-frame">
-                    <img src="assets/charitha-profile.jpg" alt="Charitha Palika smiling outdoors" width="768" height="1024" fetchpriority="high">
+                    <img src="assets/charitha-profile-cropped.png" alt="Charitha Palika smiling outdoors" width="890" height="760" fetchpriority="high">
                 </div>
-                <figcaption>CHARITHA PALIKA <span>—</span> NEUROAI RESEARCHER</figcaption>
             </figure>
         </div>
 
@@ -70,38 +66,43 @@
             <div><dt>Research focus</dt><dd>RL × Computational Neuroscience</dd></div>
             <div><dt>Methods</dt><dd>PyTorch · MuJoCo · TorchRL</dd></div>
         </dl>
-        <aside class="symposium-feature" aria-label="Research symposium participation">
-            <div class="symposium-label">Research community <span>2026</span></div>
-            <div class="symposium-content">
-                <p class="symposium-eyebrow">Research presenter</p>
-                <h2>Google DeepMind<br>APAC Research Symposium</h2>
-                <p>Presented research on event-driven reinforcement learning for adaptive neuromodulation.</p>
-            </div>
-            <span class="symposium-mark" aria-hidden="true">✳</span>
-        </aside>
-        <div class="research-highlights" aria-label="Research and community highlights">
-            <article class="highlight-card">
-                <p class="highlight-label">Research publication <span>2026</span></p>
-                <h3>Reinforcement Learning Conference</h3>
-                <p>Co-author of NutriRL, a benchmark for nutritional regulation under delayed state transitions.</p>
-                <a href="https://rlj.cs.umass.edu/2026/papers/Paper78.html" target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
+        <div class="recognition-panel" aria-labelledby="recognition-heading">
+            <h2 id="recognition-heading" class="visually-hidden">Selected publications and events</h2>
+            <article class="recognition-row">
+                <span class="recognition-year">2026</span>
+                <div class="recognition-copy">
+                    <h3>Google DeepMind APAC Research Symposium</h3>
+                    <p class="recognition-detail">Event-driven reinforcement learning for charge-efficient adaptive neuromodulation</p>
+                </div>
+                <span class="recognition-role">Presentation</span>
             </article>
-            <article class="highlight-card">
-                <p class="highlight-label">Research community <span>2025</span></p>
-                <h3>NeurIPS</h3>
-                <p>Co-organized the NeuroAI: From Neurons to Transformers social.</p>
+            <article class="recognition-row">
+                <span class="recognition-year">2026</span>
+                <div class="recognition-copy">
+                    <h3>Reinforcement Learning Conference</h3>
+                    <p class="recognition-detail">NutriRL: A Benchmark for Nutritional Regulation under Delayed State Transitions</p>
+                    <a href="https://rlj.cs.umass.edu/2026/papers/Paper78.html" target="_blank" rel="noopener noreferrer">Read the paper ↗</a>
+                </div>
+                <span class="recognition-role">Paper · Co-author</span>
+            </article>
+            <article class="recognition-row">
+                <span class="recognition-year">2025</span>
+                <div class="recognition-copy">
+                    <h3>NeurIPS 2025</h3>
+                    <p class="recognition-detail">NeuroAI: From Neurons to Transformers · Social</p>
+                </div>
+                <span class="recognition-role">Co-organizer</span>
             </article>
         </div>
         <span class="section-stop" aria-hidden="true"></span>
     </section>
 
     <section id="research">
-        <h2 class="section-title"><span class="comment-prefix">01 /</span> Ongoing Research</h2>
+        <h2 class="section-title">Ongoing research</h2>
         <article class="featured-research">
             <div class="featured-research-copy">
-                <p class="featured-eyebrow">Featured research <span>·</span> Computational neuroscience × RL</p>
                 <h3>Event-driven reinforcement learning for adaptive neuromodulation</h3>
-                <p>How can a controller learn when—and how strongly—to stimulate? I developed a Soft Actor-Critic policy that adjusts pulse timing and amplitude in a simulated Parkinsonian spiking neural network.</p>
+                <p>Soft Actor-Critic control of pulse timing and amplitude in a simulated Parkinsonian spiking neural network.</p>
                 <p class="featured-context">Compared with standard DBS in simulation; results reflect neural network modeling, not clinical outcomes.</p>
                 <div class="tags"><span class="tag">Adaptive DBS</span><span class="tag">Soft Actor-Critic</span><span class="tag">Spiking neural networks</span></div>
             </div>
@@ -117,7 +118,7 @@
             <div class="glass-card">
                 <div class="card-glow"></div>
                 <h3>Adaptive Deep Brain Stimulation</h3>
-                <p>Formulated DBS as a sequential decision-making problem over neural state trajectories. Designed a PPO-based controller to optimize stimulation parameters.</p>
+                <p>PPO-based control of stimulation parameters using neural state trajectories.</p>
                 <div class="tags">
                     <span class="tag">RL</span><span class="tag">PPO</span><span class="tag">Neuro-control</span>
                 </div>
@@ -125,7 +126,7 @@
             <div class="glass-card">
                 <div class="card-glow"></div>
                 <h3>Offline RL for L-DOPA Optimization</h3>
-                <p>Modeled medication dosing as an MDP using clinical data (PPMI dataset). Developed an offline Q-learning framework for safe policy learning.</p>
+                <p>Offline Q-learning for L-DOPA dosing using patient data from PPMI.</p>
                 <div class="tags">
                     <span class="tag">Offline RL</span><span class="tag">Q-learning</span>
                 </div>
@@ -133,7 +134,7 @@
             <div class="glass-card">
                 <div class="card-glow"></div>
                 <h3>Diet Optimization &amp; Glucose Regulation</h3>
-                <p>Designed an RL framework (LSTM + PPO) for personalized glucose regulation, handling delayed rewards and temporal dependencies.</p>
+                <p>LSTM and PPO for glucose regulation under delayed physiological feedback.</p>
                 <div class="tags">
                     <span class="tag">Sequential RL</span><span class="tag">LSTM</span>
                 </div>
@@ -141,7 +142,7 @@
             <div class="glass-card">
                 <div class="card-glow"></div>
                 <h3>Multi-Agent Gut–Brain Regulation</h3>
-                <p>Modeled gut–brain interaction as a cooperative MARL system with decentralized policies trained via MAPPO.</p>
+                <p>Cooperative gut–brain regulation with decentralized policies trained using MAPPO.</p>
                 <div class="tags">
                     <span class="tag">MARL</span><span class="tag">MAPPO</span>
                 </div>
@@ -150,13 +151,13 @@
         <span class="section-stop" aria-hidden="true"></span>
     </section>
     <section id="publications">
-        <h2 class="section-title"><span class="comment-prefix">02 /</span> Publications</h2>
+        <h2 class="section-title">Publications</h2>
         <div class="card-grid">
             <div class="glass-card pub-card">
                 <div class="card-glow"></div>
                 <div class="meta">Reinforcement Learning Journal · 2026</div>
                 <h3>NutriRL: A Benchmark for Nutritional Regulation under Delayed State Transitions</h3>
-                <p class="pub-authors">Aniket Khan, Charitha Palika, V. Srinivasa Chakravarthy</p>
+                <p class="pub-authors">Aniket Khan, <strong>Charitha Palika</strong>, V. Srinivasa Chakravarthy</p>
                 <p>A reinforcement learning benchmark for regulating multiple nutrients when physiological effects arrive after a delay.</p>
                 <div class="pub-links">
                     <a href="https://rlj.cs.umass.edu/2026/papers/Paper78.html" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
@@ -167,7 +168,7 @@
                 <div class="card-glow"></div>
                 <div class="meta">SSRN preprint · 2026</div>
                 <h3>Faulty States, Faulty Learning: Distinct Routes to Dysregulated Feeding in Homeostatic Reinforcement Learning</h3>
-                <p class="pub-authors">Charitha Palika, Aniket Khan, Roshan Maradana, Srinivas Chakravarthy</p>
+                <p class="pub-authors"><strong>Charitha Palika</strong>, Aniket Khan, Roshan Maradana, Srinivas Chakravarthy</p>
                 <p>Explores how distorted physiological state representations and altered reward learning can each disrupt feeding behavior.</p>
                 <div class="pub-links">
                     <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7560808" target="_blank" rel="noopener noreferrer">Read paper ↗</a>
@@ -178,12 +179,12 @@
         <span class="section-stop" aria-hidden="true"></span>
     </section>
     <section id="projects">
-        <h2 class="section-title"><span class="comment-prefix">03 /</span> Projects</h2>
+        <h2 class="section-title">Projects</h2>
         <div class="card-grid">
             <div class="glass-card">
                 <div class="card-glow"></div>
                 <h3>Graph Attention MARL</h3>
-                <p>Used graph attention to coordinate agents under partial observability in continuous-control environments. The course project outperformed a MADDPG baseline on Predator–Prey and Battlefield tasks.</p>
+                <p>Graph attention for agent coordination under partial observability. The course project outperformed a MADDPG baseline on Predator–Prey and Battlefield tasks.</p>
                 <div class="tags">
                     <span class="tag">MARL</span><span class="tag">GAT</span>
                 </div>
@@ -191,7 +192,7 @@
             <div class="glass-card">
                 <div class="card-glow"></div>
                 <h3>Attention-Enhanced RealNVP</h3>
-                <p>Extended flow-based models with attention-based coupling layers (CBAM), improving high-dimensional density estimation.</p>
+                <p>CBAM attention in RealNVP coupling layers for high-dimensional density estimation.</p>
                 <div class="tags">
                     <span class="tag">Flow Models</span><span class="tag">Computer Vision</span>
                 </div>
@@ -200,7 +201,7 @@
             <div class="glass-card">
                 <div class="card-glow"></div>
                 <h3>GRU-Based Robotic Control</h3>
-                <p>Trained recurrent neural networks for 2-link arm control in MuJoCo and analyzed stability via fixed points.</p>
+                <p>Recurrent control of a two-link arm in MuJoCo, with fixed-point analysis of stability.</p>
                 <div class="tags">
                     <span class="tag">RNN</span><span class="tag">MuJoCo</span>
                 </div>
@@ -208,7 +209,7 @@
             <div class="glass-card">
                 <div class="card-glow"></div>
                 <h3>RGB to Thermal Image Translation</h3>
-                <p>Implemented cross-domain translation using Pix2Pix GAN, U-Net++, and MANet, evaluating thermal reconstruction performance.</p>
+                <p>RGB-to-thermal reconstruction using Pix2Pix GAN, U-Net++, and MANet.</p>
                 <div class="tags">
                     <span class="tag">GAN</span><span class="tag">Pix2Pix</span>
                 </div>
@@ -217,7 +218,7 @@
         <span class="section-stop" aria-hidden="true"></span>
     </section>
     <section id="education">
-        <h2 class="section-title"><span class="comment-prefix">04 /</span> Education</h2>
+        <h2 class="section-title">Education</h2>
         <div class="education-collage">
             <article class="education-degree">
                 <figure class="education-visual education-visual--phd">
@@ -276,7 +277,7 @@
         <span class="section-stop" aria-hidden="true"></span>
     </section>
     <section id="skills">
-        <h2 class="section-title"><span class="comment-prefix">05 /</span> Skills &amp; Achievements</h2>
+        <h2 class="section-title">Skills &amp; achievements</h2>
         <div class="skills-section">
             <div class="skills-list">
                 <div class="skill-item">Python</div>
@@ -292,22 +293,24 @@
         <div class="achievements-section">
             <h3 class="achievements-heading">Awards &amp; recognition</h3>
             <ul class="achievements-list">
-                <li><span class="ach-icon">🥇</span> Institute Merit Prize (M.Tech) for best academic record in Biotechnology, IIT Madras.</li>
-                <li><span class="ach-icon">🏅</span> American Express Award, Dr. S.S. Srikanta Prize, P K Narayana Iyer Prize for academic excellence.</li>
-                <li><span class="ach-icon">🏆</span> Buti Foundation Gold Medal for best academic record (women) amongst DD/M.Tech/M.Sc/BS/MS.</li>
-                <li><span class="ach-icon">🎯</span> GATE Biotechnology (2018): AIR 15.</li>
-                <li><span class="ach-icon">🎯</span> Joint CSIR-UGC NET Lifesciences (2018): AIR 113.</li>
+                <li><strong>Institute Merit Prize</strong> — best M.Tech academic record in Biotechnology, IIT Madras.</li>
+                <li><strong>American Express Award, Dr. S.S. Srikanta Prize, P K Narayana Iyer Prize</strong> — academic excellence.</li>
+                <li><strong>Buti Foundation Gold Medal</strong> — best academic record among women in DD/M.Tech/M.Sc/BS/MS programs.</li>
+                <li><strong>GATE Biotechnology, 2018</strong> — All India Rank 15.</li>
+                <li><strong>Joint CSIR-UGC NET Lifesciences, 2018</strong> — All India Rank 113.</li>
             </ul>
         </div>
     </section>
-</div>
+</main>
 
 <footer>
     <div class="container">
+        <div class="footer-contact">
+            <div><h2>Contact</h2><a href="mailto:charithapalika@gmail.com">charithapalika@gmail.com</a></div>
+            <a class="back-to-top" href="#about">Back to top ↑</a>
+        </div>
         <div class="footer-content">
             <span>Charitha Palika</span>
-            <span class="footer-sep">·</span>
-            <span>Made with 💙 by Charitha</span>
             <span class="footer-sep">·</span>
             <span>© 2026</span>
         </div>
