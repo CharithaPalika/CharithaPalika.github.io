@@ -145,19 +145,6 @@ nav { background: rgba(255, 255, 255, .97); border-bottom: 1px solid #e2e2e2; }
 section { padding-top: clamp(60px, 7vw, 80px); padding-bottom: clamp(60px, 7vw, 80px); scroll-snap-align: start; scroll-snap-stop: always; opacity: 1; transform: none; transition: none; }
 section:not(:last-child) { border-bottom: 1px solid #d5d5d5; }
 section .section-stop { position: absolute; left: 0; bottom: 0; width: 1px; height: 1px; scroll-snap-align: end; scroll-snap-stop: always; }
-section:not(:last-child)::after {
-    content: '↓';
-    position: absolute;
-    left: 50%;
-    bottom: -13px;
-    transform: translateX(-50%);
-    width: 34px;
-    background: #fff;
-    color: #777;
-    font: 500 .82rem var(--font-mono);
-    line-height: 25px;
-    text-align: center;
-}
 .comment-prefix { font-size: .8rem; font-weight: 500; letter-spacing: .06em; color: #888; margin-right: 14px; }
 .section-title { font-family: var(--font-heading); margin-bottom: 36px; }
 .section-title::after { background: #111; box-shadow: none; animation: none; }
@@ -179,19 +166,11 @@ section:not(:last-child)::after {
 .pub-card .pub-links { margin-top: 8px; }
 .tag { color: #333; background: #f5f5f5; border-color: #d7d7d7; font: 400 .75rem var(--font-system); }
 .tag:hover { color: #111; background: #eee; box-shadow: none; border-color: #aaa; }
-.featured-research { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(240px, .75fr); gap: clamp(28px, 5vw, 64px); padding: clamp(26px, 4vw, 48px); background: #f3f3f1; border: 1px solid #e3e3e1; }
-.research-results > p { margin: 0 0 20px; color: #555; font: 600 .85rem/1.6 var(--font-system); }
-.featured-research h3 { margin: 0 0 20px; max-width: 24ch; font-size: clamp(1.65rem, 2.7vw, 2.5rem); line-height: 1.16; letter-spacing: -.03em; color: #111; }
-.featured-research-copy > p:not(.featured-eyebrow) { margin: 0 0 18px; color: #3e3e3e; font-size: .95rem; line-height: 1.7; }
-.featured-research-copy > .featured-context { color: #666 !important; font-size: .85rem !important; }
-.research-results { border-left: 1px solid #ccc; padding-left: clamp(24px, 3vw, 40px); }
-.research-results > p span { display: block; color: #666; font-weight: 400; }
-.research-results > div { padding: 17px 0; border-top: 1px solid #d2d2d0; }
-.research-results strong { display: block; color: #111; font-size: clamp(2rem, 3vw, 2.8rem); line-height: 1.1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
-.research-results strong small { font-size: .875rem; color: #666; letter-spacing: 0; }
-.research-results div > span { display: block; margin-top: 6px; color: #444; font-size: .86rem; line-height: 1.45; }
-.research-results div > span small { color: #777; font-size: .9em; }
-.research-more-heading { margin: 44px 0 22px; color: #111; font-size: 1.1rem; }
+.research-theme { display: grid; grid-template-columns: minmax(180px, .7fr) minmax(0, 2fr); gap: 32px; padding: 28px 0; border-top: 1px solid #ccc; }
+.research-theme > h3 { margin: 0; color: #555; font: 600 .95rem/1.45 var(--font-system); }
+.research-items { display: grid; gap: 26px; }
+.research-item h4 { margin: 0 0 7px; color: #111; font: 700 1.1rem/1.35 var(--font-heading); }
+.research-item p { margin: 0; max-width: 66ch; color: #505050; font-size: .95rem; line-height: 1.65; }
 .education-collage { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-items: start; }
 .education-degree { min-width: 0; }
 .education-visual { display: grid; height: 320px; overflow: hidden; }
@@ -265,8 +244,7 @@ footer { scroll-snap-align: end; scroll-snap-stop: always; }
     .recognition-row { grid-template-columns: 1fr auto; gap: 8px 16px; }
     .recognition-copy { grid-column: 1 / -1; grid-row: 2; }
     .recognition-role { grid-column: 2; grid-row: 1; }
-    .featured-research { grid-template-columns: 1fr; }
-    .research-results { padding-left: 0; border-left: 0; }
+    .research-theme { grid-template-columns: 1fr; gap: 16px; }
     .card-grid { grid-template-columns: 1fr; }
     .pub-card { grid-template-columns: 1fr; row-gap: 10px; }
     .pub-card > :not(.card-glow), .pub-card .meta { grid-column: 1; grid-row: auto; }

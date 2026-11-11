@@ -307,3 +307,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+// BibTeX toggles and copy buttons on publication entries.
+document.querySelectorAll('.pub-cite-toggle').forEach(btn => {
+    const panel = document.getElementById(btn.getAttribute('aria-controls'));
+    if (!panel) return;
+    btn.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!open));
+        panel.hidden = open;
+    });
+});
+document.querySelectorAll('.pub-copy').forEach(btn => {
+    btn.addEventListener('click', async () => {
+        const text = btn.parentElement.querySelector('code').textContent;
+        try {
+            await navigator.clipboard.writeText(text);
+            btn.textContent = 'Copied';
+        } catch {
+            const range = document.createRange();
+            range.selectNodeContents(btn.parentElement.querySelector('code'));
+            const sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
+            btn.textContent = 'Selected — press ⌘C';
+        }
+        setTimeout(() => { btn.textContent = 'Copy'; }, 1800);
+    });
+});
